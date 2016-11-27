@@ -61,13 +61,17 @@ public class LoggingAspect {
         System.out.println("hijacked arguments : " + Arrays.toString(joinPoint.getArgs()));
 
         System.out.println("Around before is running!");
-        long start = System.currentTimeMillis();
         joinPoint.proceed();
-        System.out.println("Method took " + (System.currentTimeMillis() - start) + " ms");
         System.out.println("Around after is running!");
 
         System.out.println("******");
 
     }
 
+    @Around("@annotation(com.mkyong.aspect.annotation.LogTime)")
+    public void logAround2(ProceedingJoinPoint joinPoint) throws Throwable {
+        long start = System.currentTimeMillis();
+        joinPoint.proceed();
+        System.out.println("Method took " + (System.currentTimeMillis() - start) + " ms");
+    }
 }

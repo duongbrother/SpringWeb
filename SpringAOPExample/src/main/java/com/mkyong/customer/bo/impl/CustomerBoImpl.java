@@ -1,5 +1,6 @@
 package com.mkyong.customer.bo.impl;
 
+import com.mkyong.aspect.annotation.LogTime;
 import com.mkyong.customer.bo.CustomerBo;
 import java.util.concurrent.TimeUnit;
 
@@ -19,6 +20,7 @@ public class CustomerBoImpl implements CustomerBo {
 		throw new Exception("Generic Error");
 	}
 	
+    @LogTime
 	public void addCustomerAround(String name){
          try {
             TimeUnit.SECONDS.sleep(7);
