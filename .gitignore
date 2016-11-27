@@ -9,3 +9,6 @@
 /HelloWorld/.settings/org.eclipse.wst.jsdt.ui.superType.name
 /HelloWorld/.settings/org.eclipse.wst.validation.prefs
 /HelloWorld/target
+/SpringAOPExample/target/
+/SpringAOPExample/*.classpath
+/SpringAOPExample/*.project
