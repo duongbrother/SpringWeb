@@ -1,4 +1,4 @@
-package com.mkyong.customer.dao.impl;
+package com.nvd.customer.dao.impl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,9 +11,9 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSourceUtils;
 import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
 import org.springframework.jdbc.core.simple.SimpleJdbcDaoSupport;
 
-import com.mkyong.customer.dao.CustomerDAO;
-import com.mkyong.customer.model.Customer;
-import com.mkyong.customer.model.CustomerParameterizedRowMapper;
+import com.nvd.customer.dao.CustomerDAO;
+import com.nvd.customer.model.Customer;
+import com.nvd.customer.model.CustomerParameterizedRowMapper;
 
 
 public class SimpleJdbcCustomerDAO extends SimpleJdbcDaoSupport implements CustomerDAO

@@ -1,12 +1,12 @@
-package com.mkyong.common;
+package com.nvd.common;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import com.mkyong.customer.dao.CustomerDAO;
-import com.mkyong.customer.model.Customer;
+import com.nvd.customer.dao.CustomerDAO;
+import com.nvd.customer.model.Customer;
 
 public class SimpleJdbcTemplateApp 
 {
@@ -19,9 +19,9 @@ public class SimpleJdbcTemplateApp
     		new ClassPathXmlApplicationContext("Spring-Module.xml");
     	
     	CustomerDAO customerSimpleDAO = (CustomerDAO) context.getBean("customerSimpleDAO");
-        Customer customer1 = new Customer(1, "mkyong1",100);
-        Customer customer3 = new Customer(2, "mkyong2",200);
-        Customer customer2 = new Customer(3, "mkyong3",300);
+        Customer customer1 = new Customer(1, "nvd1",100);
+        Customer customer3 = new Customer(2, "nvd2",200);
+        Customer customer2 = new Customer(3, "nvd3",300);
  
         List<Customer>customers = new ArrayList<Customer>();
         customers.add(customer1);
@@ -58,9 +58,9 @@ public class SimpleJdbcTemplateApp
         System.out.println("Total : " + total);
         
         
-        Customer customer4 = new Customer(7, "mkyong4",24);
-        Customer customer5 = new Customer(8, "mkyong5",25);
-        Customer customer6 = new Customer(9, "mkyong6",26);
+        Customer customer4 = new Customer(7, "nvd4",24);
+        Customer customer5 = new Customer(8, "nvd5",25);
+        Customer customer6 = new Customer(9, "nvd6",26);
  
         List<Customer>customers2 = new ArrayList<Customer>();
         customers2.add(customer4);

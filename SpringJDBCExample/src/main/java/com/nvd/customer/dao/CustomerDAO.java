@@ -1,7 +1,7 @@
-package com.mkyong.customer.dao;
+package com.nvd.customer.dao;
 
 import java.util.List;
-import com.mkyong.customer.model.Customer;
+import com.nvd.customer.model.Customer;
 
 public interface CustomerDAO 
 {

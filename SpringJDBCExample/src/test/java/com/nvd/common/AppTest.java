@@ -1,4 +1,4 @@
-package com.mkyong.common;
+package com.nvd.common;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

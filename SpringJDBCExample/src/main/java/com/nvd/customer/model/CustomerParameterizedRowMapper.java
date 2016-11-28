@@ -1,4 +1,4 @@
-package com.mkyong.customer.model;
+package com.nvd.customer.model;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

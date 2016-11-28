@@ -3,11 +3,11 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-	<bean id="customerDAO" class="com.mkyong.customer.dao.impl.JdbcCustomerDAO">
+	<bean id="customerDAO" class="com.nvd.customer.dao.impl.JdbcCustomerDAO">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 	
-	<bean id="customerSimpleDAO" class="com.mkyong.customer.dao.impl.SimpleJdbcCustomerDAO">
+	<bean id="customerSimpleDAO" class="com.nvd.customer.dao.impl.SimpleJdbcCustomerDAO">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 	

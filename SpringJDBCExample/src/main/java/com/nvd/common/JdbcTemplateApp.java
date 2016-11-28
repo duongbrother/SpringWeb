@@ -1,12 +1,12 @@
-package com.mkyong.common;
+package com.nvd.common;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import com.mkyong.customer.dao.CustomerDAO;
-import com.mkyong.customer.model.Customer;
+import com.nvd.customer.dao.CustomerDAO;
+import com.nvd.customer.model.Customer;
 
 public class JdbcTemplateApp 
 {

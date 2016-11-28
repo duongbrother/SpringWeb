@@ -1,4 +1,4 @@
-package com.mkyong.common;
+package com.nvd.common;
 
 public class App 
 {

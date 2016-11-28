@@ -1,4 +1,4 @@
-package com.mkyong.customer.dao.impl;
+package com.nvd.customer.dao.impl;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -10,9 +10,9 @@ import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
-import com.mkyong.customer.dao.CustomerDAO;
-import com.mkyong.customer.model.Customer;
-import com.mkyong.customer.model.CustomerRowMapper;
+import com.nvd.customer.dao.CustomerDAO;
+import com.nvd.customer.model.Customer;
+import com.nvd.customer.model.CustomerRowMapper;
 
 public class JdbcCustomerDAO extends JdbcDaoSupport implements CustomerDAO
 {
