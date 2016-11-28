@@ -12,3 +12,5 @@
 /SpringAOPExample/target/
 /SpringAOPExample/*.classpath
 /SpringAOPExample/*.project
+/SpringJDBCExample/.classpath
+/SpringJDBCExample/.project
