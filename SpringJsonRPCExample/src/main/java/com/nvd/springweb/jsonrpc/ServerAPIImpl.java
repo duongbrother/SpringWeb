@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @AutoJsonRpcServiceImpl
-public class ExampleServerAPIImpl implements ExampleServerAPI {
+public class ServerAPIImpl implements ServerAPI {
 
     @Override
     public long multiplier(long a, long b) {

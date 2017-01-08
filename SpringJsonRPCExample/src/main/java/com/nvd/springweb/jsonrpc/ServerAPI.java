@@ -5,7 +5,7 @@ import com.googlecode.jsonrpc4j.JsonRpcService;
 import java.util.List;
 
 @JsonRpcService("/api")
-public interface ExampleServerAPI {
+public interface ServerAPI {
 
     long multiplier(@JsonRpcParam(value = "a") long a, @JsonRpcParam(value = "b") long b);
 
