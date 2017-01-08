@@ -14,7 +14,7 @@ public class ExampleServerAPIImpl implements ExampleServerAPI {
     }
 
     @Override
-    public String getStringValue(Person person) {
+    public String printPerson(Person person) {
         return person.toString();
     }
 
