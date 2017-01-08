@@ -22,6 +22,5 @@ public class ServerAPIImpl implements ServerAPI {
     public String printPersons(List<Person> persons) {
         return persons.toString();
     }
-    
 }
 

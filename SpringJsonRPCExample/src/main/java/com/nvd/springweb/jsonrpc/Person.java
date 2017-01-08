@@ -1,8 +1,4 @@
 package com.nvd.springweb.jsonrpc;
-
-import com.google.gson.Gson;
-import java.util.Arrays;
-import java.util.List;
 public class Person {
 
     private String name;
