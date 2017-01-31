@@ -19,3 +19,7 @@
 /HelloWorld - Copy/target/
 /SpringJsonRPCExample/target/
 /SpringJsonRPCExample/nb-configuration.xml
+*.class
+/SpringJsonRPCClient/target
+/SpringAOPCacheResult/target
+/SpringAOPCacheResult/nb-configuration.xml

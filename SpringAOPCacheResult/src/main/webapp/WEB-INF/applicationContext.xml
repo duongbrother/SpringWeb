@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+    
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    <bean id="cacheFactory" class="com.nvd.springweb.cacheoutput.GeneralCacheFactory"/>
+    <bean id="cacheAspect" class="com.nvd.springweb.cacheoutput.aspect.CacheAspect"/>
+    
+    <bean id="myMap" class = "java.util.concurrent.ConcurrentHashMap" />
+
+    <bean id ="myService" class = "com.programcreek.helloworld.service.MyService">
+        <constructor-arg ref="myMap"/>
+    </bean>
+
+    <bean id ="secondService" class = "com.programcreek.helloworld.service.SercondService">
+    </bean>
+
+    <bean id="mbeanExporter" class="org.springframework.jmx.export.MBeanExporter">
+        <property name="beans">
+            <map>
+                <entry key="application.helloworld:service=myService" value-ref="myService"/>
+                <entry key="application.helloworld:service=secondService" value-ref="secondService"/>
+                <entry key="application.helloworld:service=cacheAspect" value-ref="cacheAspect"/>
+                <entry key="application.helloworld:service=cacheFactory" value-ref="cacheFactory"/>
+            </map>
+        </property>
+    </bean>
+</beans>
